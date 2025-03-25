@@ -1,0 +1,11 @@
+@use '../abstracts/' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,600;1,600&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,700;1,700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    @include a.add-flex(column, center, center, a.rem(24));
+    padding: 0 a.rem(24);
+    background-color: a.$grey-950;
+}

@@ -1,0 +1,17 @@
+@use '../abstracts/functions' as f;
+
+$grey-500: #969FAD;
+$grey-900: #262E38;
+$grey-950: #131518;
+
+$orange-500: #FC7614;
+
+$gradient-1: radial-gradient(#232A34, #181E27);
+
+$text-preset-1: 700 f.rem(28)/f.rem(35) 'Overpass', sans-serif;
+$text-preset-2: 700 f.rem(24)/f.rem(30) 'Overpass', sans-serif;
+$text-preset-3: 700 f.rem(16)/f.rem(24) 'Overpass', sans-serif;
+$text-preset-4: 400 f.rem(15)/f.rem(24) 'Overpass', sans-serif;
+$text-preset-5-bold: 700 f.rem(14)/f.rem(18) 'Overpass', sans-serif;
+$text-preset-5-semibold: 600 f.rem(14)/f.rem(24) 'Overpass', sans-serif;
+$text-preset-5: 400 f.rem(14)/f.rem(22) 'Overpass', sans-serif;

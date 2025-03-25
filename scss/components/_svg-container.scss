@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+@use '../utils/' as u;
+
+.svg-container {
+    @extend %circle-container;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

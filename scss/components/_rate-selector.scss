@@ -1,0 +1,24 @@
+@use '../abstracts/' as a;
+@use '../utils/' as u;
+
+.rate-selector {
+    @extend %circle-container;
+    font: a.$text-preset-5-bold;
+    color: a.$grey-500;
+
+    &:hover {
+        background-color: #FFF;
+        cursor: pointer;
+        color: a.$grey-900;
+    }
+
+    &.selected {
+        background-color: a.$orange-500;
+        color: a.$grey-900;
+    }
+
+    @media all and (min-width: 768px) {
+        font: a.$text-preset-3;
+    }
+
+}

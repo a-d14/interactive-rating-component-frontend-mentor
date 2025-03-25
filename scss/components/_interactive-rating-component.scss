@@ -1,0 +1,115 @@
+@use '../abstracts/' as a;
+@use '../utils/' as u;
+
+.interactive-rating-component {
+    background: a.$gradient-1;
+    padding: a.rem(24);
+    border-radius: a.rem(15);
+
+    max-width: a.rem(412);
+
+    @include a.add-flex(column, $gap: a.rem(24));
+
+    &__header {
+        @include a.add-flex(column, $gap: a.rem(24));
+        font: a.$text-preset-2;
+        color: #FFF;
+    }
+
+    &__body {
+        @include a.add-flex(column, $gap: a.rem(16));
+        margin-top: -(a.rem(8));
+        font: a.$text-preset-5;
+        color: a.$grey-500;
+    }
+
+    &__select-rating {
+        @include a.add-flex(row, $justify-content: space-between);
+    }
+
+    &__submit-rating {
+        @extend %btn;
+        padding: a.rem(12.5) 0;
+        border-radius: a.rem(22.5);
+        font: a.$text-preset-5-bold;
+        letter-spacing: 1.87px;
+    }
+
+    @media all and (min-width: 768px) {
+        padding: a.rem(32) a.rem(24);
+
+        &__header {
+            font: a.$text-preset-1;
+        }
+
+        &__body {
+            font: a.$text-preset-4;
+        }
+
+        &__submit-rating {
+            font: a.$text-preset-5-semibold;
+        }
+    }
+
+    &--submitted {
+        text-align: center;
+
+        @include a.add-flex(column, $align-items: center, $gap: a.rem(24));
+
+        &__header {
+            @include a.add-flex(column, $align-items: center, $gap: a.rem(24));
+
+            font: a.$text-preset-2;
+            color: #FFF;
+
+            span {
+                padding: a.rem(8) a.rem(16);
+                font: a.$text-preset-5;
+                color: a.$orange-500;
+                background-color: a.$grey-900;
+                border-radius: a.rem(22.5);
+            }
+
+            img {
+                width: a.rem(144);
+                height: auto;
+            }
+        }
+
+        &__body {
+            margin-top: -(a.rem(8));
+            font: a.$text-preset-5;
+            color: a.$grey-500;
+        }
+
+        @media all and (min-width: 768px) {
+            &__header {
+                gap: a.rem(32);
+                
+                img {
+                    width: a.rem(162);
+                    height: auto;
+                }
+
+                span {
+                    font: a.$text-preset-4;
+                }
+            }
+
+            &__body {
+                margin-top: -(a.rem(16));
+                font: a.$text-preset-4;
+            }
+        }
+
+    }
+
+    @media all and (min-width: 768px) {
+        gap: a.rem(32);
+        border-radius: a.rem(30);
+
+        &__body {
+            margin-top: -(a.rem(16));
+        }
+    }
+}

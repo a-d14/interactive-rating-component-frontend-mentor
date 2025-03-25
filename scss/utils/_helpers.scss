@@ -1,0 +1,28 @@
+@use  '../abstracts/' as a;
+
+%circle-container {
+    width: a.rem(40);
+    height: a.rem(40);
+    padding: a.rem(10);
+    border-radius: 50%;
+
+    @include a.add-flex(row, center, center);
+
+    background-color: a.$grey-900;
+
+    @media all and (min-width: 768px) {
+        width: a.rem(48);
+        height: a.rem(48);
+        padding: a.rem(16);
+    }
+}
+
+%btn {
+    text-transform: uppercase;
+    background-color: a.$orange-500;
+
+    &:hover {
+        background-color: #FFF;
+        cursor: pointer;
+    }
+}
