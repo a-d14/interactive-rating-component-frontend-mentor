@@ -52,4 +52,4 @@ Users should be able to:
 - JS Template Literals
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/a-d14)
+- Frontend Mentor - [@a-d14](https://www.frontendmentor.io/profile/a-d14)
